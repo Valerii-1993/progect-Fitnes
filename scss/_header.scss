@@ -1,0 +1,104 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 25px 4px 22px;
+
+  &__logo {
+    @media (min-width: $laptop) {
+      margin-left: 81px;
+    }
+  }
+
+  &__nav-list {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(59, 72, 77, 0.91);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    box-shadow: -2px 3px 17px 0px #000;
+    z-index: 10;
+    display: none;
+    min-width: 250px;
+
+    @media (min-width: $tablet) {
+      display: flex;
+      position: static;
+      transform: translate(0%, 0%);
+      background-color: inherit;
+      box-shadow: none;
+    }
+    @media (min-width: $laptop) {
+      justify-content: space-evenly;
+      margin-right: 50px;
+    }
+  }
+
+  &__nav-item {
+    margin: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+
+    @media (min-width: $tablet) {
+      font-size: 15px;
+      margin: 10px;
+      color: black;
+    }
+    @media (min-width: $laptop) {
+      font-size: 14px;
+      line-height: 16px;
+      margin-right: 39px;
+    }
+  }
+
+  &__nav-btn {
+    padding: 10px;
+  }
+}
+
+.active-menu {
+  display: block;
+}
+
+.burger {
+  position: relative;
+  width: 40px;
+  height: 35px;
+  display: block;
+  margin-left: 10px;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.burger span,
+.burger:after,
+.burger:before {
+  height: 2px;
+  width: 30px;
+  position: absolute;
+  background: #000;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.burger span {
+  top: 17px;
+}
+
+.burger:after,
+.burger:before {
+  content: "";
+}
+
+.burger:after {
+  bottom: 10px;
+}
+
+.burger:before {
+  top: 10px;
+}

@@ -1,0 +1,44 @@
+html,
+body {
+  max-width: 1150px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font: 500 14px/1.1 $main-font;
+  color: #000000;
+
+  @media (max-width: 320px) {
+    width: 320px;
+    overflow-x: scroll;
+  }
+}
+
+.button {
+  color: #ffffff;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    90deg,
+    #fccaff 0%,
+    #fddeff 17.19%,
+    #fcd1ff 37.5%,
+    #fccbff 76.04%,
+    #fccaff 100%
+  );
+  box-shadow: 0px 4px 4px rgba(253, 145, 255, 0.36);
+  border-radius: 10px;
+}
+
+.button:hover {
+  color: #312f2d;
+  background: linear-gradient(
+    90deg,
+    #b6944b 0%,
+    #d18f13 17.19%,
+    #e4b152 37.5%,
+    #e4b050 76.04%,
+    #eecc82 100%
+  );
+  box-shadow: 0px 1px 1px rgba(229, 177, 134, 0.75);
+}

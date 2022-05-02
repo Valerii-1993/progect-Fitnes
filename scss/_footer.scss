@@ -1,0 +1,78 @@
+.footer{
+position: relative;
+padding-bottom: 20px;
+}
+.footer__image{
+    position: absolute;
+    top: -54px;
+    max-width: 47%;
+@media (min-width: $tablet) {
+    max-width: 50%;
+    top: -115px;
+    left: 0;
+}
+@media (min-width: $laptop) {
+    max-width: 100%;
+    top: -115px;
+    left: 66px;
+}
+
+}
+.footer__title{
+    width: 184px;
+    font-size: 24px;
+    line-height: 28px;
+    margin-left: auto;
+    margin-bottom: 38px;
+    @media (max-width: 340px) {
+        width: 130px;
+      }
+    @media (min-width: $tablet) {
+        width: 460px;
+        font-size: 36px;
+        line-height: 42px;
+      }
+      @media (min-width: $laptop) {
+        width: 400px;
+        margin-right: auto;
+        font-size: 36px;
+        line-height: 42px;
+      }
+    
+}
+.footer__btn-container{
+text-align: right;
+    @media (min-width: $tablet) {
+        text-align: center;
+    }
+}
+
+.footer__btn{
+    margin-right: 10px;
+    margin-bottom: 39px;
+    position: relative;
+    padding: 11px 15px 7px 15px;
+    box-shadow: -4px -4px 10px rgba(251, 182, 255, 0.5), 4px 4px 10px rgba(251, 182, 255, 0.5);
+}
+.footer__btn::before{
+    content: '';
+    left: -29px;
+    bottom: -17px;
+    background-repeat: no-repeat;
+    height: 43px;
+    width: 42px;
+    position: absolute;
+    background-image: url('/images/flover.svg');
+    transform: rotate(-15deg);
+}
+.footer__text-container{
+    @media (min-width: $tablet) {
+    width: 300px;
+    margin: auto;    
+    }
+}
+
+.footer__text{
+margin-left: 29px;
+}
+

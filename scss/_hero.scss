@@ -1,0 +1,114 @@
+.hero {
+  background-image: url('../images/hero-background.jpg');
+  z-index: -1;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  @media (min-width: $tablet) {
+    background-image: url('../images/main.jpg');
+  }
+
+  &-inner {
+    padding: 10px;
+  }
+
+  &__btn {
+    margin: 24px 0 85px 30px;
+    position: relative;
+    padding: 11px 21px 10px 17px;
+    box-shadow: -4px -4px 10px rgba(251, 182, 255, 0.5),
+      4px 4px 10px rgba(251, 182, 255, 0.5);
+    @media (min-width: $laptop) {
+      margin-left: 114px;
+    }
+  }
+
+  &__btn::before {
+    content: "";
+    left: -22px;
+    bottom: -22px;
+    background-repeat: no-repeat;
+    height: 43px;
+    width: 42px;
+    position: absolute;
+    background-image: url('../images/flover.svg');
+    transform: rotate(-15deg);
+  }
+
+  &__block {
+    padding: 10px 22px 10px 8px;
+    display: flex;
+    align-content: center;
+    width: 281px;
+    background: rgba(251, 182, 255, 0.21);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-bottom: 69px;
+    @media (min-width: $tablet) {
+      margin-left: 40px;
+      width: 45%;
+      align-items: center;
+    }
+    @media (min-width: $laptop) {
+      margin-left: 84px;
+      margin-bottom: 150px;
+    }
+  }
+
+  &__text {
+    width: 265px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    @media (min-width: $tablet) {
+      margin-left: 40px;
+    }
+    @media (min-width: $laptop) {
+      margin-left: 115px;
+    }
+  }
+
+  &__svg {
+    @media (min-width: $laptop) {
+      width: 16px;
+      height: 18px;
+    }
+  }
+
+  &__title {
+    color: #ffffff;
+    margin-bottom: 9px;
+  }
+
+  &__subtitle {
+    color: #ffffff;
+    width: 226px;
+  }
+
+  &__container {
+    margin-left: auto;
+  }
+
+  &__block-text {
+    font: 700 14px/1.22 $main-font;
+    color: #ffffff;
+    margin-left: 8px;
+  }
+
+  &__line {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+  }
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.74);
+  position: relative;
+  min-height: 100%;
+  @media (min-width: $tablet) {
+    background-color: inherit;
+  }
+  @media (min-width: $laptop) {
+  }
+}

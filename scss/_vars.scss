@@ -1,0 +1,16 @@
+$tablet: 768px;
+$laptop: 1100px;
+
+$main-font: "Roboto", sans-serif;
+
+.title {
+  font: 700 36px/1.19 $main-font;
+}
+
+.subtitle {
+  font: 500 14px/1.15 $main-font;
+}
+
+.active {
+  display: block;
+}

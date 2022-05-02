@@ -1,0 +1,116 @@
+.price {
+  background-image: url("../images/courses-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 130px 10px 167px 10px;
+  @media (min-width: $tablet) {
+    padding-bottom: 222px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+
+  &__inner {
+    @media (min-width: $tablet) {
+      display: flex;
+    }
+  }
+
+  &__block:nth-child(2) {
+    @media (min-width: $tablet) {
+      width: 321px;
+      height: 375px;
+      margin-top: 5px;
+    }
+  }
+
+  &__block:nth-child(2) button {
+    @media (min-width: $tablet) {
+      padding: 17px 31px;
+      font-size: 18px;
+      line-height: 21px;
+      left: 16%;
+    }
+  }
+
+  &__block {
+    padding: 16px 27px 19px 24px;
+    text-align: center;
+    width: 200px;
+    background-image: url("../images/price-background.jpg");
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 34px;
+    color: #fff;
+    backdrop-filter: blur(21px);
+    position: relative;
+    @media (min-width: $tablet) {
+      width: 268px;
+      height: 313px;
+      padding-left: 41px;
+      margin-top: 40px;
+    }
+  }
+
+  &__block:last-child {
+    margin-bottom: 0;
+  }
+
+  &__block-title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 16px;
+    position: relative;
+    @media (min-width: $tablet) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &__block-title::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    width: 145px;
+    height: 1px;
+    background-color: white;
+    @media (min-width: $tablet) {
+      left: 30px;
+    }
+  }
+
+  &__block-list {
+    text-align: left;
+  }
+  
+  &__block-text {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    @media (min-width: $tablet) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__block-btn {
+    font-size: 10px;
+    line-height: 12px;
+    box-shadow: 0px 4px 4px rgba(253, 145, 255, 0.36);
+    border-radius: 10px;
+    padding: 7px 9px;
+    @media (min-width: $tablet) {
+      position: absolute;
+      bottom: 54px;
+      left: 29%;
+      padding: 10px 14px;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.reviews{
+
+&__block-title {
+  background-image: url("../images/reviews-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+
+&__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+&__block {
+  @media (min-width: $tablet) {
+    width: 600px;
+    margin: 0 auto;
+  }
+  @media (min-width: $laptop) {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+&__item {
+  padding: 11px 10px 41px 12px;
+  background: #f0f0f0;
+  border-radius: 9px;
+  margin-bottom: 15px;
+  @media (min-width: $tablet) {
+    padding: 29px 25px 63px 29px;
+  }
+}
+
+&__inner {
+  padding: 46px 62px 0;
+}
+
+&__name {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 10px;
+}
+&__text {
+  font: 500 12px/1.1 "Roboto", sans-serif;
+  font-style: italic;
+}
+&__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+&__img {
+  border-radius: 50%;
+  max-width: 10%;
+  @media (min-width: $tablet) {
+    position: absolute;
+    max-width: 100%;
+    top: 13px;
+    left: -133px;
+  }
+}
+}
